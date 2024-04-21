@@ -22,4 +22,15 @@ statement_input_widget = Entry()
 statement_input_widget.config(width=50)
 statement_input_widget.pack()
 
+#     append the submitted statement on a txt file
+def submit():
+    user_statement = statement_input_widget.get() # stores the current text in the widget to the variable
+    with open("mylife.txt", "a") as output_file: # opens file, permission set to append
+        output_file.write(user_statement)
+        output_file.write("\n")
+
+#     create button for user to submit their statement
+submit_button = Button(text="SUBMIT", command=submit) # submit() is a function, the function is called when button is clicked
+submit_button.pack()
+
 window.mainloop()
