@@ -33,4 +33,8 @@ def submit():
 submit_button = Button(text="SUBMIT", command=submit) # submit() is a function, the function is called when button is clicked
 submit_button.pack()
 
+#     create an exit button that exits window and terminates the program
+exit_button = Button(text="EXIT", command=quit) # the window is terminated when exit button is clicked
+exit_button.pack()
+
 window.mainloop()
