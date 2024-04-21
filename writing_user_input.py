@@ -17,4 +17,9 @@ window.resizable(False, False)
 instructions = Label(window, text="Please input a statement on the text box." + "\n" + "Click 'ENTER' to submit a statement." + "\n" + "Click 'EXIT' to close the program.")
 instructions.pack()
 
+#     create an entry widget in window for users to enter statements
+statement_input_widget = Entry()
+statement_input_widget.config(width=50)
+statement_input_widget.pack()
+
 window.mainloop()
