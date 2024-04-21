@@ -1,4 +1,7 @@
 from tkinter import Tk, Label
+import colorama
+from colorama import Fore, Back
+colorama.init(autoreset=True)
 
 # pseudocode:
 #    create input file and write 20 values of names and GWAs
@@ -34,8 +37,10 @@ window = Tk()
 window.title("STUDENT WITH THE HIGHEST GWA")
 window.geometry("900x300")
 window.resizable(False, False)
+window.config(bg="cyan")
 
 label = Label(window, text = ("\n" * 3) + "NAME: " + name_of_student_highest_gwa + "\n" + "GWA: " + current_highest_gwa, font=("MS Serif", 20, "bold"))
+label.config(bg="cyan")
 
 label.pack()
 window.mainloop()
