@@ -14,3 +14,12 @@
 #            current highest GWA and name stays the same
 #    create window
 #    in window, display highest GWA and name of student who got highest GWA
+
+current_highest_gwa = 0.00 #initializes current_highest_gwa
+with open("name_and_gwa.txt", "r") as name_and_gwa_file:
+    for line in name_and_gwa_file:
+        name_and_gwa = line.rstrip('\n')
+        name_and_gwa = name_and_gwa.split(":")
+        name = name_and_gwa[0]
+        gwa = name_and_gwa[1]
+        print(name, gwa)
