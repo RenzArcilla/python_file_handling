@@ -1,7 +1,4 @@
 from tkinter import Tk, Label
-import colorama
-from colorama import Fore, Back
-colorama.init(autoreset=True)
 
 # pseudocode:
 #    create input file and write 20 values of names and GWAs
