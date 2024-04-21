@@ -21,5 +21,10 @@ with open("name_and_gwa.txt", "r") as name_and_gwa_file:
         name_and_gwa = line.rstrip('\n')
         name_and_gwa = name_and_gwa.split(":")
         name = name_and_gwa[0]
-        gwa = name_and_gwa[1]
-        print(name, gwa)
+        gwa = float(name_and_gwa[1])
+        if gwa > current_highest_gwa:
+            current_highest_gwa = gwa
+            name_of_student_highest_gwa = name
+            
+print(current_highest_gwa)
+print(name_of_student_highest_gwa)
