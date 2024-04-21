@@ -8,8 +8,13 @@ from tkinter import *
 #     create an exit button that exits window and terminates the program
 #     make things fancy(resize, change bg and fg colors)
 
+#creates a window
 window = Tk()
 window.geometry("900x300")
 window.resizable(False, False)
+
+#     display instructions as text on window
+instructions = Label(window, text="Please input a statement on the text box." + "\n" + "Click 'ENTER' to submit a statement." + "\n" + "Click 'EXIT' to close the program.")
+instructions.pack()
 
 window.mainloop()
