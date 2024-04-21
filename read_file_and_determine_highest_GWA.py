@@ -1,3 +1,5 @@
+from tkinter import Tk
+
 # pseudocode:
 #    create input file and write 20 values of names and GWAs
 #    open input file
@@ -25,6 +27,13 @@ with open("name_and_gwa.txt", "r") as name_and_gwa_file:
         if gwa > current_highest_gwa:
             current_highest_gwa = gwa
             name_of_student_highest_gwa = name
-            
-print(current_highest_gwa)
-print(name_of_student_highest_gwa)
+
+# print(current_highest_gwa)
+# print(name_of_student_highest_gwa)
+
+window = Tk()
+window.title("STUDENT WITH THE HIGHEST GWA")
+window.geometry("900x300")
+window.resizable(False, False)
+
+window.mainloop()
