@@ -14,4 +14,8 @@
 with open("numbers.txt", "r") as numbers_file:
     for line in numbers_file:
         line = line.rstrip("\n")
-        print(line)
+        line = int(line)
+        if line % 2 == 0:
+            print("EVEN:", line)
+        else:
+            print("ODD:", line)
