@@ -14,17 +14,15 @@
 #    close txt file
 #    if possible, make things fancy
 
+even_numbers = ""
+odd_numbers = ""
 with open("numbers.txt", "r") as numbers_file:
     for line in numbers_file:
         line = line.rstrip("\n")
         line = int(line)
         if line % 2 == 0: #checks if int is even
-            pass
-#            with open("even.txt", "a") as even_numbers_file:
-#                even_numbers_file.write(str(line))
-#                even_numbers_file.write("\n")
+            even_numbers = even_numbers + ", " + str(line)
         else: #checks if int is odd
-            pass
-#            with open("odd.txt", "a") as odd_numbers_file:
-#                odd_numbers_file.write(str(line))
-#                odd_numbers_file.write("\n")
+            odd_numbers = odd_numbers + ", " + str(line)
+even_numbers = "LIST OF EVEN NUMBERS: " + even_numbers.lstrip(", ")
+odd_numbers = "LIST OF ODD NUMBERS: " + odd_numbers.lstrip(", ")
