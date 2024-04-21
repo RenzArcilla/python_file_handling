@@ -1,3 +1,4 @@
+from tkinter import *
 # pseudocode:
 #     create a window
 #     display instructions as text on window
@@ -6,3 +7,9 @@
 #     append the submitted statement on a txt file
 #     create an exit button that exits window and terminates the program
 #     make things fancy(resize, change bg and fg colors)
+
+window = Tk()
+window.geometry("900x300")
+window.resizable(False, False)
+
+window.mainloop()
