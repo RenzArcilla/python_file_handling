@@ -1,17 +1,18 @@
 # pseudocode:
-#    create numbers.txt file
-#    write 20 integers in the txt file
-#    open txt file
-#    read txt file per line
-#        strip "\n"
-#        convert str to int
-#        test if int is even or odd
-#        if even, append to string of even numbers
-#        if odd, append to string of odd numbers
-#    append list of even numbers to even.txt
-#    append list of odd numbers to odd.txt
-#    close txt file
-#    if possible, make things fancy
+#    start:
+#        create numbers.txt file
+#        write 20 integers in the txt file
+#        open txt file
+#        read txt file per line
+#            strip "\n"
+#            convert str to int
+#            test if int is even or odd
+#            if even, append to string of even numbers
+#            if odd, append to string of odd numbers
+#        append list of even numbers to even.txt
+#        append list of odd numbers to odd.txt
+#        close txt file
+#    end:
 
 even_numbers = ""
 odd_numbers = ""
