@@ -17,3 +17,10 @@
 #         open txt output file for cubed ints
 #             write the string containing both input and output (cube)
 
+
+#     open txt output file for squared ints
+with open("double.txt", "a") as output_file_for_squares:
+    #         write a string for label
+    output_file_for_squares.write("INPUT: SQUARED")
+    output_file_for_squares.write("\n")
+
