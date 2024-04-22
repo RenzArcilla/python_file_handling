@@ -38,7 +38,16 @@ with open("integers.txt", "r") as input_file:
         string_input = line.rstrip("\n")
         #         convert str to int
         integer_input = int(string_input)
-        print(integer_input)
+        #         compute for square and store in a variable
+        squared_int = integer_input * integer_input
+        #         compute for cube and store in a variable
+        cubed_int = integer_input * integer_input * integer_input
+        #         use string formatting to store both input and output (square) in a variable
+        input_and_squared_output = f"{integer_input}: {squared_int}"
+        #         use string formatting to store both input and output (cube) in a variable
+        input_and_cubed_output = f"{integer_input}: {cubed_int}"
+        print(input_and_cubed_output)
+        print(input_and_squared_output)
 
 
 
