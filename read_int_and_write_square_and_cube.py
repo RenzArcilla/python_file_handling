@@ -29,3 +29,19 @@ with open("triple.txt", "a") as output_file_for_squares:
     #         write a string for label
     output_file_for_squares.write("INPUT: CUBED")
     output_file_for_squares.write("\n")
+
+#     open input file and read line by line
+with open("integers.txt", "r") as input_file:
+    for line in input_file:
+        #         store line as str in a variable
+        #         remove unnecessary characters
+        string_input = line.rstrip("\n")
+        #         convert str to int
+        integer_input = int(string_input)
+        print(integer_input)
+
+
+
+
+
+
