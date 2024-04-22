@@ -24,3 +24,8 @@ with open("double.txt", "a") as output_file_for_squares:
     output_file_for_squares.write("INPUT: SQUARED")
     output_file_for_squares.write("\n")
 
+#     open txt output file for cubed ints
+with open("triple.txt", "a") as output_file_for_squares:
+    #         write a string for label
+    output_file_for_squares.write("INPUT: CUBED")
+    output_file_for_squares.write("\n")
